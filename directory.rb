@@ -28,3 +28,6 @@ puts "Vanessa Virgitti"
 puts "Paul Fitzgerald"
 puts "Carrie Christenson"
 puts "Diego Romero"
+print "Overall, we have "
+print 28
+puts " great students"
