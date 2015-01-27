@@ -1,47 +1,41 @@
 # Let's put all students into an array
 students = [
-"Dr. Hannibal Lecter",
-"Darth Vader",
-"Nurse Ratched",
-"Michael Corleone",
-"Alex De Large",
-"The Alien",
-"Terminator",
-"Freddy Kruger",
-"The Joker",
-"Erik Griffin",
-"Julian Veling",
-"Alex Parkinson",
-"Louise Beh",
-"Sean Haughton",
-"Edward Brown",
-"Kate Beavis",
-"Thomas Strothjohann",
-"Kevin Lanzon",
-"Yannick B.",
-"Meads Chalcroft",
-"Gabriel Arafa",
-"Sebastien Pires",
-"Jordan Poultron",
-"Tom coakes",
-"Vanessa Virgitti",
-"Paul Fitzgerald",
-"Carrie Christenson",
-"Diego Romero",
-"Loris Fochesato"]
+{:names => "Erik Griffin", :cohort => :february},
+{:names => "Julian Veling", :cohort => :february},
+{:names => "Alex Parkinson", :cohort => :february},
+{:names => "Louise Beh", :cohort => :february},
+{:names => "Sean Haughton", :cohort => :february},
+{:names => "Edward Brown", :cohort => :february},
+{:names => "Kate Beavis", :cohort => :february},
+{:names => "Thomas Strothjohann", :cohort => :february},
+{:names => "Kevin Lanzon", :cohort => :february},
+{:names => "Yannick B.", :cohort => :february},
+{:names => "Meads Chalcroft", :cohort => :february},
+{:names => "Gabriel Arafa", :cohort => :february},
+{:names => "Sebastien Pires", :cohort => :february},
+{:names => "Jordan Poultron", :cohort => :february},
+{:names => "Tom coakes", :cohort => :february},
+{:names => "Vanessa Virgitti", :cohort => :february},
+{:names => "Paul Fitzgerald", :cohort => :february},
+{:names => "Carrie Christenson", :cohort => :february},
+{:names => "Diego Romero", :cohort => :february},
+{:names => "Loris Fochesato", :cohort => :february}
+] 
 
 def print_header
   puts "The students of my cohort at Makers Academy"
   puts "--------------"
 end
 
-def print(names)
-  names.each {|name| puts name}
+def print(students)
+  students.each do |student| 
+  	puts "#{student[:names]} (#{student[:cohort]} cohort)"
+  end
 end
 
 def print_footer(names)
 # finally we print the total
-  print "Overall, we have #{names.length} great students\n"
+  puts "Overall, we have #{names.length} great students"
 end
 
 # Nothing happens until we call the methods
