@@ -11,7 +11,10 @@ def input_students
     cohort = gets.chomp
     while !name.empty? && !country_of_birth.empty? && !cohort.empty? do# add the student hash to the array
       students << {:name => name, :country => country_of_birth, :cohort => cohort}
-      puts "Now we have #{students.length} students"
+      if students.length == 1
+      	puts "Now we have #{students.length} student"
+      else puts "Now we have #{students.length} students"
+      end
       # get another name from the user
       name = gets.chomp
       country_of_birth = gets.chomp
@@ -27,14 +30,14 @@ def print_header
 end
 
 def print(students)
-    students.each do |student|
-  	puts "#{student[:name]}, from #{student[:country]}, (#{student[:cohort]} cohort)".center(70)
+	students.each do |student|
+  	puts "(#{student[:cohort]} cohort), #{student[:name]}, from #{student[:country]}".center(70)
   end
 end
 
 def print_footer(names)
 # finally we print the total
-  puts "Overall, we have #{names.length} great students"
+  	puts "Overall, we have #{names.length} great students"
 end
 
 # Nothing happens until we call the methods
