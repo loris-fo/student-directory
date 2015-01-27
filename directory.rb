@@ -1,34 +1,37 @@
-student_count = 28
+# Let's put all students into an array
+students = [
+"Dr. Hannibal Lecter",
+"Darth Vader",
+"Nurse Ratched",
+"Michael Corleone",
+"Alex De Large",
+"The Alien",
+"Terminator",
+"Freddy Kruger",
+"The Joker",
+"Erik Griffin",
+"Julian Veling",
+"Alex Parkinson",
+"Louise Beh",
+"Sean Haughton",
+"Edward Brown",
+"Kate Beavis",
+"Thomas Strothjohann",
+"Kevin Lanzon",
+"Yannick B.",
+"Meads Chalcroft",
+"Gabriel Arafa",
+"Sebastien Pires",
+"Jordan Poultron",
+"Tom coakes",
+"Vanessa Virgitti",
+"Paul Fitzgerald",
+"Carrie Christenson",
+"Diego Romero",
+"Loris Fochesato"]
 # first we print the list of students
 puts "The students of my cohort at Makers Academy"
 puts "--------------"
-puts "Dr. Hannibal Lecter"
-puts "Darth Vader"
-puts"Nurse Ratched"
-puts "Michael Corleone"
-puts "Alex De Large"
-puts "The Alien"
-puts "Terminator"
-puts "Freddy Kruger"
-puts "The Joker"
-puts "Erik Griffin"
-puts "Julian Veling"
-puts "Alex Parkinson"
-puts "Louise Beh"
-puts "Sean Haughton"
-puts "Edward Brown"
-puts "Kate Beavis"
-puts "Thomas Strothjohann"
-puts "Kevin Lanzon"
-puts "Yannick B."
-puts "Meads Chalcroft"
-puts "Gabriel Arafa"
-puts "Sebastien Pires"
-puts "Jordan Poultron"
-puts "Tom Coakes"
-puts "Vanessa Virgitti"
-puts "Paul Fitzgerald"
-puts "Carrie Christenson"
-puts "Diego Romero"
+students.each {|student| puts student}
 # finally we print the total
-print "Overall, we have #{student_count} great students"
+print "Overall, we have #{students.length} great students\n"
