@@ -23,10 +23,8 @@ def print_header
 end
 
 def print(students)
-  i=0
-    while i<students.length
-  	puts "#{students[0]} (#{students[1]} cohort)"
-  	i+=1
+    students.each do |student|
+  	puts "#{student[:name]} (#{student[:cohort]} cohort)".center(70)
   end
 end
 
