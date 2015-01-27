@@ -1,6 +1,6 @@
 # Let's put all students into an array
 def input_students
-	puts "Please enter the names and country of birth of the students"
+	puts "Please enter the names, country of birth of the students and their cohort"
 	puts "To finish, just hit return twice"
 	# create an empty array
     students = []
@@ -8,12 +8,14 @@ def input_students
     name = gets.chomp
     #while the name is not empty, repeat this code
     country_of_birth = gets.chomp
-    while !name.empty? && !country_of_birth.empty? do# add the student hash to the array
-      students << {:name => name, :country => country_of_birth, :cohort => :february}
+    cohort = gets.chomp
+    while !name.empty? && !country_of_birth.empty? && !cohort.empty? do# add the student hash to the array
+      students << {:name => name, :country => country_of_birth, :cohort => cohort}
       puts "Now we have #{students.length} students"
       # get another name from the user
       name = gets.chomp
       country_of_birth = gets.chomp
+      cohort = gets.chomp
     end
     # return the array of students
     students
